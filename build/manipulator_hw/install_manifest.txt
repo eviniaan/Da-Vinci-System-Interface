@@ -1,1 +1,0 @@
-/home/evinia/KCL/Interface/install/manipulator_hw/lib/libmanipulator_hw.so

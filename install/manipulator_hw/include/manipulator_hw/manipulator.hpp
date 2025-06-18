@@ -1,1 +1,0 @@
-/home/evinia/KCL/Interface/src/manipulator_hw/include/manipulator_hw/manipulator.hpp

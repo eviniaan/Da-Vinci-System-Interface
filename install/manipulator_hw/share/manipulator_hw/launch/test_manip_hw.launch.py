@@ -1,1 +1,0 @@
-/home/evinia/KCL/Interface/src/manipulator_hw/launch/test_manip_hw.launch.py

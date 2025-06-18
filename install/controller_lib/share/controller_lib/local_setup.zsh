@@ -1,1 +1,0 @@
-/home/evinia/KCL/Interface/build/controller_lib/ament_cmake_environment_hooks/local_setup.zsh
