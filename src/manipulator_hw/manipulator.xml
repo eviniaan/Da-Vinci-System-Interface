@@ -1,0 +1,10 @@
+<library path="manipulator_hw">
+    <class 
+        name="manipulator_hw/Manipulator"
+        type="manipulator_hw::Manipulator"
+        base_class_type="hardware_interface::SystemInterface">
+    <description>
+        Hardware interface for the Da Vinci manipulator
+    </description>
+    </class>
+</library>

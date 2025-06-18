@@ -1,0 +1,239 @@
+[0.091s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.091s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x79e2c0f28a60>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79e2c108a0b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79e2c108a0b0>>, mixin_verb=('build',))
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.250s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/evinia/KCL/Interface'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_script) by extensions ['ignore', 'ignore_ament_install']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_script) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_script) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_script) by extensions ['colcon_pkg']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_script) by extension 'colcon_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_script) by extensions ['colcon_meta']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_script) by extension 'colcon_meta'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_script) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_script) by extension 'ros'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_script) by extensions ['cmake', 'python']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_script) by extension 'cmake'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_script) by extension 'python'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_script) by extensions ['python_setup_py']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(arduino_script) by extension 'python_setup_py'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_lib) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_lib) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_lib) by extension 'ignore_ament_install'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_lib) by extensions ['colcon_pkg']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_lib) by extension 'colcon_pkg'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_lib) by extensions ['colcon_meta']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_lib) by extension 'colcon_meta'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_lib) by extensions ['ros']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_lib) by extension 'ros'
+[0.274s] DEBUG:colcon.colcon_core.package_identification:Package 'src/controller_lib' with type 'ros.ament_cmake' and name 'controller_lib'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_hw) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_hw) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_hw) by extension 'ignore_ament_install'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_hw) by extensions ['colcon_pkg']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_hw) by extension 'colcon_pkg'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_hw) by extensions ['colcon_meta']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_hw) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_hw) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_hw) by extension 'ros'
+[0.275s] DEBUG:colcon.colcon_core.package_identification:Package 'src/manipulator_hw' with type 'ros.ament_cmake' and name 'manipulator_hw'
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.291s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.291s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.292s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/home/evinia/KCL/Class/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[0.292s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/evinia/KCL/Interface/install/manipulator_hw' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.292s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/evinia/KCL/Interface/install/controller_lib' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.292s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/evinia/KCL/Class/install/manipulator_hw' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.292s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/evinia/KCL/Class/install/controller_lib' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.292s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/evinia/KCL/Interface/install/manipulator_hw' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.293s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/evinia/KCL/Interface/install/controller_lib' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.293s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/evinia/KCL/Class/install/manipulator_hw' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.293s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/evinia/KCL/Class/install/controller_lib' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.293s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/evinia/KCL/Interface/install
+[0.294s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 16 installed packages in /home/evinia/turtlebot3_ws/install
+[0.295s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 413 installed packages in /opt/ros/humble
+[0.298s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'controller_lib' build argument 'cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'controller_lib' build argument 'cmake_target' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'controller_lib' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'controller_lib' build argument 'cmake_clean_cache' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'controller_lib' build argument 'cmake_clean_first' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'controller_lib' build argument 'cmake_force_configure' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'controller_lib' build argument 'ament_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'controller_lib' build argument 'catkin_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'controller_lib' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.338s] DEBUG:colcon.colcon_core.verb:Building package 'controller_lib' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/evinia/KCL/Interface/build/controller_lib', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/evinia/KCL/Interface/install/controller_lib', 'merge_install': False, 'path': '/home/evinia/KCL/Interface/src/controller_lib', 'symlink_install': True, 'test_result_base': None}
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'manipulator_hw' build argument 'cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'manipulator_hw' build argument 'cmake_target' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'manipulator_hw' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'manipulator_hw' build argument 'cmake_clean_cache' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'manipulator_hw' build argument 'cmake_clean_first' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'manipulator_hw' build argument 'cmake_force_configure' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'manipulator_hw' build argument 'ament_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'manipulator_hw' build argument 'catkin_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'manipulator_hw' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.338s] DEBUG:colcon.colcon_core.verb:Building package 'manipulator_hw' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/evinia/KCL/Interface/build/manipulator_hw', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/evinia/KCL/Interface/install/manipulator_hw', 'merge_install': False, 'path': '/home/evinia/KCL/Interface/src/manipulator_hw', 'symlink_install': True, 'test_result_base': None}
+[0.339s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.339s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.340s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/evinia/KCL/Interface/src/controller_lib' with build type 'ament_cmake'
+[0.340s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/evinia/KCL/Interface/src/controller_lib'
+[0.342s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.342s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.342s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.346s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/evinia/KCL/Interface/src/manipulator_hw' with build type 'ament_cmake'
+[0.347s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/evinia/KCL/Interface/src/manipulator_hw'
+[0.347s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.347s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.356s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/evinia/KCL/Interface/build/controller_lib': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evinia/turtlebot3_ws/install/turtlebot3_teleop:/home/evinia/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/evinia/KCL/Interface/src/controller_lib -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/evinia/KCL/Interface/install/controller_lib
+[0.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/evinia/KCL/Interface/build/manipulator_hw': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evinia/turtlebot3_ws/install/turtlebot3_teleop:/home/evinia/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/evinia/KCL/Interface/src/manipulator_hw -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/evinia/KCL/Interface/install/manipulator_hw
+[1.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/evinia/KCL/Interface/build/controller_lib' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evinia/turtlebot3_ws/install/turtlebot3_teleop:/home/evinia/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/evinia/KCL/Interface/src/controller_lib -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/evinia/KCL/Interface/install/controller_lib
+[1.835s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/evinia/KCL/Interface/build/controller_lib': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evinia/turtlebot3_ws/install/turtlebot3_teleop:/home/evinia/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/evinia/KCL/Interface/build/controller_lib -- -j16 -l16
+[2.110s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/evinia/KCL/Interface/build/manipulator_hw' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evinia/turtlebot3_ws/install/turtlebot3_teleop:/home/evinia/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/evinia/KCL/Interface/src/manipulator_hw -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/evinia/KCL/Interface/install/manipulator_hw
+[2.113s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/evinia/KCL/Interface/build/manipulator_hw': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evinia/turtlebot3_ws/install/turtlebot3_teleop:/home/evinia/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/evinia/KCL/Interface/build/manipulator_hw -- -j16 -l16
+[3.304s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/evinia/KCL/Interface/build/controller_lib' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evinia/turtlebot3_ws/install/turtlebot3_teleop:/home/evinia/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/evinia/KCL/Interface/build/controller_lib -- -j16 -l16
+[3.317s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/evinia/KCL/Interface/build/controller_lib': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evinia/turtlebot3_ws/install/turtlebot3_teleop:/home/evinia/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/evinia/KCL/Interface/build/controller_lib
+[3.562s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller_lib)
+[3.562s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/evinia/KCL/Interface/build/controller_lib' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evinia/turtlebot3_ws/install/turtlebot3_teleop:/home/evinia/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/evinia/KCL/Interface/build/controller_lib
+[3.564s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/controller_lib' for CMake module files
+[3.564s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/controller_lib' for CMake config files
+[3.565s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_lib', 'cmake_prefix_path')
+[3.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/evinia/KCL/Interface/install/controller_lib/share/controller_lib/hook/cmake_prefix_path.ps1'
+[3.565s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/evinia/KCL/Interface/install/controller_lib/share/controller_lib/hook/cmake_prefix_path.dsv'
+[3.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/evinia/KCL/Interface/install/controller_lib/share/controller_lib/hook/cmake_prefix_path.sh'
+[3.566s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/controller_lib/bin'
+[3.566s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/controller_lib/lib/pkgconfig/controller_lib.pc'
+[3.567s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/controller_lib/lib/python3.10/site-packages'
+[3.567s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/controller_lib/bin'
+[3.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/evinia/KCL/Interface/install/controller_lib/share/controller_lib/package.ps1'
+[3.568s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/evinia/KCL/Interface/install/controller_lib/share/controller_lib/package.dsv'
+[3.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/evinia/KCL/Interface/install/controller_lib/share/controller_lib/package.sh'
+[3.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/evinia/KCL/Interface/install/controller_lib/share/controller_lib/package.bash'
+[3.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/evinia/KCL/Interface/install/controller_lib/share/controller_lib/package.zsh'
+[3.570s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/evinia/KCL/Interface/install/controller_lib/share/colcon-core/packages/controller_lib)
+[3.571s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller_lib)
+[3.571s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/controller_lib' for CMake module files
+[3.571s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/controller_lib' for CMake config files
+[3.571s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_lib', 'cmake_prefix_path')
+[3.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/evinia/KCL/Interface/install/controller_lib/share/controller_lib/hook/cmake_prefix_path.ps1'
+[3.572s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/evinia/KCL/Interface/install/controller_lib/share/controller_lib/hook/cmake_prefix_path.dsv'
+[3.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/evinia/KCL/Interface/install/controller_lib/share/controller_lib/hook/cmake_prefix_path.sh'
+[3.573s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/controller_lib/bin'
+[3.573s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/controller_lib/lib/pkgconfig/controller_lib.pc'
+[3.573s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/controller_lib/lib/python3.10/site-packages'
+[3.573s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/controller_lib/bin'
+[3.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/evinia/KCL/Interface/install/controller_lib/share/controller_lib/package.ps1'
+[3.574s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/evinia/KCL/Interface/install/controller_lib/share/controller_lib/package.dsv'
+[3.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/evinia/KCL/Interface/install/controller_lib/share/controller_lib/package.sh'
+[3.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/evinia/KCL/Interface/install/controller_lib/share/controller_lib/package.bash'
+[3.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/evinia/KCL/Interface/install/controller_lib/share/controller_lib/package.zsh'
+[3.576s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/evinia/KCL/Interface/install/controller_lib/share/colcon-core/packages/controller_lib)
+[7.701s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/evinia/KCL/Interface/build/manipulator_hw' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evinia/turtlebot3_ws/install/turtlebot3_teleop:/home/evinia/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/evinia/KCL/Interface/build/manipulator_hw -- -j16 -l16
+[7.703s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/evinia/KCL/Interface/build/manipulator_hw': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evinia/turtlebot3_ws/install/turtlebot3_teleop:/home/evinia/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/evinia/KCL/Interface/build/manipulator_hw
+[8.233s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_hw)
+[8.234s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/manipulator_hw' for CMake module files
+[8.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/evinia/KCL/Interface/build/manipulator_hw' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/evinia/turtlebot3_ws/install/turtlebot3_teleop:/home/evinia/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/evinia/KCL/Interface/build/manipulator_hw
+[8.234s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/manipulator_hw' for CMake config files
+[8.235s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_hw', 'cmake_prefix_path')
+[8.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/hook/cmake_prefix_path.ps1'
+[8.235s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/hook/cmake_prefix_path.dsv'
+[8.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/hook/cmake_prefix_path.sh'
+[8.236s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/manipulator_hw/lib'
+[8.236s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_hw', 'ld_library_path_lib')
+[8.236s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/hook/ld_library_path_lib.ps1'
+[8.237s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/hook/ld_library_path_lib.dsv'
+[8.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/hook/ld_library_path_lib.sh'
+[8.237s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/manipulator_hw/bin'
+[8.237s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/manipulator_hw/lib/pkgconfig/manipulator_hw.pc'
+[8.237s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/manipulator_hw/lib/python3.10/site-packages'
+[8.237s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/manipulator_hw/bin'
+[8.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/package.ps1'
+[8.238s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/package.dsv'
+[8.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/package.sh'
+[8.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/package.bash'
+[8.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/package.zsh'
+[8.239s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/evinia/KCL/Interface/install/manipulator_hw/share/colcon-core/packages/manipulator_hw)
+[8.240s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_hw)
+[8.240s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/manipulator_hw' for CMake module files
+[8.240s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/manipulator_hw' for CMake config files
+[8.241s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_hw', 'cmake_prefix_path')
+[8.241s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/hook/cmake_prefix_path.ps1'
+[8.241s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/hook/cmake_prefix_path.dsv'
+[8.241s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/hook/cmake_prefix_path.sh'
+[8.242s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/manipulator_hw/lib'
+[8.242s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_hw', 'ld_library_path_lib')
+[8.242s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/hook/ld_library_path_lib.ps1'
+[8.242s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/hook/ld_library_path_lib.dsv'
+[8.243s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/hook/ld_library_path_lib.sh'
+[8.243s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/manipulator_hw/bin'
+[8.243s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/manipulator_hw/lib/pkgconfig/manipulator_hw.pc'
+[8.243s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/manipulator_hw/lib/python3.10/site-packages'
+[8.243s] Level 1:colcon.colcon_core.environment:checking '/home/evinia/KCL/Interface/install/manipulator_hw/bin'
+[8.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/package.ps1'
+[8.244s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/package.dsv'
+[8.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/package.sh'
+[8.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/package.bash'
+[8.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/evinia/KCL/Interface/install/manipulator_hw/share/manipulator_hw/package.zsh'
+[8.245s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/evinia/KCL/Interface/install/manipulator_hw/share/colcon-core/packages/manipulator_hw)
+[8.246s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.246s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.246s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.246s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.251s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.251s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.251s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.266s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.267s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/evinia/KCL/Interface/install/local_setup.ps1'
+[8.268s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/evinia/KCL/Interface/install/_local_setup_util_ps1.py'
+[8.270s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/evinia/KCL/Interface/install/setup.ps1'
+[8.271s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/evinia/KCL/Interface/install/local_setup.sh'
+[8.272s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/evinia/KCL/Interface/install/_local_setup_util_sh.py'
+[8.272s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/evinia/KCL/Interface/install/setup.sh'
+[8.274s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/evinia/KCL/Interface/install/local_setup.bash'
+[8.274s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/evinia/KCL/Interface/install/setup.bash'
+[8.276s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/evinia/KCL/Interface/install/local_setup.zsh'
+[8.276s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/evinia/KCL/Interface/install/setup.zsh'

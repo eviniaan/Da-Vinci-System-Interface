@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "controller_lib_build",
+		"source" : "/home/evinia/KCL/Interface/src/controller_lib"
+	}
+}

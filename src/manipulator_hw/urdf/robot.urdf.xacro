@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="test_robot">
+  <link name="world"/>
+
+  <ros2_control name="Test" type="system">
+    <hardware>
+      <plugin>manipulator_hw/Manipulator</plugin>
+      <param name="port">/dev/ttyACM0</param>
+      <param name="baudrate">57600</param>
+    </hardware>
+    <joint name="jaw_1">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="jaw_2">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="roll">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="pitch">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+  </ros2_control>
+</robot>
