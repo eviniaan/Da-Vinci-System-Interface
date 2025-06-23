@@ -63,7 +63,6 @@ namespace manipulator_hw
         }
         catch (const std::exception &e)
         {
-            RCLCPP_ERROR(rclcpp::get_logger("Config"), "Can't read parameters");
             return hardware_interface::CallbackReturn::ERROR;
         }
 
