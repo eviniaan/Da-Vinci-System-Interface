@@ -35,15 +35,6 @@ def generate_launch_description():
         # namespace=namespace,
     )
 
-    # this controller is spawned via the controller_manager and it publishes joint states from the hw interface to the /joint_states topic
-    # this uses the URDF
-    # joint_state_broadcaster_spawner = Node(
-    #     package="controller_manager",
-    #     executable="spawner",
-    #     arguments=["joint_state_broadcaster"],
-    #     parameters=[robot_description],
-    # )
-
     # might also need a robot state publisher node to publish the tfs
     robot_state_publisher = Node(
         package="robot_state_publisher",
@@ -53,8 +44,31 @@ def generate_launch_description():
         # namespace=namespace
     )
 
+    # this controller is spawned via the controller_manager and it publishes joint states from the hw interface to the /joint_states topic
+    # this uses the URDF
+    joint_state_broadcaster_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
+        # parameters=[robot_description],
+    )
+
+    forward_position_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["forward_position_controller", "--controller-manager", "/controller_manager"],
+    )
+
+    joint_trajectory_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_trajectory_controller", "--controller-manager", "/controller_manager"],
+    )
+
     return LaunchDescription([
         manipulator_control,
-        # joint_state_broadcaster_spawner,
-        robot_state_publisher
+        robot_state_publisher,
+        joint_state_broadcaster_spawner,
+        # forward_position_controller_spawner,  // both forward_position_controller and joint_trajectory_controller want to command the same joints but only ine can at a time
+        joint_trajectory_controller_spawner,
     ])

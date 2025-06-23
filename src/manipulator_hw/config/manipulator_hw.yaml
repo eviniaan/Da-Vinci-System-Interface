@@ -2,42 +2,42 @@ controller_manager:
   ros__parameters:
     update_rate: 10
 
-    # the following part is supposed to be useful when not using a urdf file but it doesn't work either way
-    # hardware_interface:
-    #   type: system
-    #   hardware_plugin: "manipulator_hw/Manipulator"
-    #   joints:
-    #     - jaw_1
-    #     - jaw_2
-    #     - roll
-    #     - pitch
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
 
-    # the following controller will use the interface 
-    # broadcaster of available states
-#     joint_state_broadcaster:
-#       type: joint_state_broadcaster/JointStateBroadcaster
+    forward_position_controller:
+      type: forward_command_controller/ForwardCommandController
+
+    joint_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
 
 
-# forward_position_controller:
-#   ros__parameters:
-#     type: forward_position_controller/ForwardPositionController
-#     joints:
-#       - jaw_1
-#       - jaw_2
-#       - roll
-#       - pitch
-#     interface_name: position
+forward_position_controller:
+  ros__parameters:
+    joints:
+      - jaw_1
+      - jaw_2
+      - roll
+      - pitch
+    interface_name: position
 
+joint_trajectory_controller:
+  ros__parameters:
+    joints:
+      - jaw_1
+      - jaw_2
+      - roll
+      - pitch
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+    # state_publish_rate: 200.0
+    # action_monitor_rate: 20.0
 
-
-    # joint_trajectory_controller:
-    #   type: joint_trajectory_controller/JointTrajectoryController
-    #   joints:
-    #     - jaw_1
-    #     - jaw_2
-    #     - roll
-    #     - pitch
-    #   command_interfaces:
-    #     - position
-    #   state_interfaces: # this is needed for control feedback
-    #     - position
+    # allow_partial_joints_goal: false
+    # open_loop_control: true
+    # allow_integration_in_goal_trajectories: true
+    # constraints:
+    #   stopped_velocity_tolerance: 0.01
+    #   goal_time: 0.0 # start immediately
