@@ -13,25 +13,11 @@ This project provides a modular hardware interface and control system for a robo
 
 ### 2. Dependencies
 
-Ensure these ROS 2 packages are installed before building:
-
 - `rclcpp`
 - `rclcpp_lifecycle`
 - `hardware_interface`
 - `pluginlib`
 - `serial_driver`
-
-Install them using:
-
-```bash
-sudo apt update
-sudo apt install \
-  ros-${ROS_DISTRO}-rclcpp \
-  ros-${ROS_DISTRO}-rclcpp-lifecycle \
-  ros-${ROS_DISTRO}-hardware-interface \
-  ros-${ROS_DISTRO}-pluginlib \
-  ros-${ROS_DISTRO}-serial-driver
-```
 
 ### 3. Clone & **Build**
 
