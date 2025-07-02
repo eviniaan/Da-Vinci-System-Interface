@@ -69,6 +69,6 @@ def generate_launch_description():
         manipulator_control,
         robot_state_publisher,
         joint_state_broadcaster_spawner,
-        # forward_position_controller_spawner,  // both forward_position_controller and joint_trajectory_controller want to command the same joints but only ine can at a time
-        joint_trajectory_controller_spawner,
+        forward_position_controller_spawner,  # both forward_position_controller and joint_trajectory_controller want to command the same joints but only ine can at a time
+        # joint_trajectory_controller_spawner,
     ])

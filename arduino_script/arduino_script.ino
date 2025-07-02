@@ -53,8 +53,9 @@ int iters = 0;
 // Define the desired end-effector angles in degrees
 double theta_R = 0; 
 double theta_W = 0;
-double theta_G1 = 0;
-double theta_G2 = 0; //can reverse direction of gripper 2 angle for usablity (need to change intersection check)
+double theta_G1 = -1;
+double theta_G2 = 3; //can reverse direction of gripper 2 angle for usablity (need to change intersection check)
+// theta_G1 and theta_G2 != 0 to make sure the gripper is closed at the beginning
 
 void setup() {
   delay(1000);
@@ -93,6 +94,7 @@ void setup() {
 
 
 void loop() {
+//  V1 (Aban)
 //  if (Serial.available() > 0) {
 //    String receivedData = Serial.readStringUntil('\n');  // Read until newline
 //    processAngles(receivedData);
@@ -112,8 +114,7 @@ void loop() {
     for (int i = 0; i < 4; i++) {
       memcpy(&received_angles[i], &raw_bytes[i * 4], sizeof(float));
     }
-  
-    // Set your angles
+    
     theta_R  = received_angles[0];
     theta_W  = received_angles[1];
     theta_G1 = received_angles[2];
@@ -121,9 +122,9 @@ void loop() {
   }
   
   // Gripper intersection check
-  if (theta_G2 > theta_G1){
+  if (theta_G2 - 12 > theta_G1){
     Serial.println("Error: Gripper angles cannot intersect, midpoint chosen instead");
-    theta_G1 = (theta_G1+theta_G2)/2;
+    theta_G1 = (theta_G1+theta_G2)/2 - 5;
     theta_G2 = theta_G1;
   }
 
@@ -169,17 +170,28 @@ void loop() {
   
   iters+=1;
 
-  for (int i = 0; i < NUM_MOTORS; i++) 
-  {
+// V3
+  String posString = "";
+  for (int i = 0; i < NUM_MOTORS; i++) {
     int pos = dxl.getPresentPosition(DXL_IDs[i]);
-    Serial.print(pos);
-    if (i < NUM_MOTORS - 1) {
-      Serial.print(","); // comma separator
-    } else {
-      Serial.println(); // newline at the end
-    }
+    posString += String(pos);
+    if (i < NUM_MOTORS - 1) posString += ",";
   }
+  Serial.println(posString);
 
+//  V2 (version that was working but wasn't always printing all angles)
+//  for (int i = 0; i < NUM_MOTORS; i++) 
+//  {
+//    int pos = dxl.getPresentPosition(DXL_IDs[i]);
+//    Serial.print(pos);
+//    if (i < NUM_MOTORS - 1) {
+//      Serial.print(","); // comma separator
+//    } else {
+//      Serial.println(); // newline at the end
+//    }
+//  }
+
+//  V1 (Aban)
 //  for (int i = 0; i < NUM_MOTORS; i++) 
 //  {
 //  int pos = dxl.getPresentPosition(DXL_IDs[i]);
