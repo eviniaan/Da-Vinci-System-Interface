@@ -5,7 +5,7 @@
   <version>0.0.0</version>
   <description>This package serves as a way to control the da Vinci tool using the Xbox 360 game controller</description>
   <maintainer email="evinia.anasta@gmail.com">evinia</maintainer>
-  <license>TODO: License declaration</license>
+  <license>Apache-2.0</license>
 
   <depend>rclpy</depend>
   <depend>sensor_msgs</depend>

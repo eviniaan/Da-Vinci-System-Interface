@@ -16,11 +16,11 @@ setup(
     maintainer='evinia',
     maintainer_email='evinia.anasta@gmail.com',
     description='This package serves as a way to control the da Vinci tool using the Xbox 360 game controller',
-    license='TODO: License declaration', # don't know 
+    license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'xbox_control = xbox_control.xbox_joint_controller:main',
+            'xbox_control = xbox_control.xbox_controller_tool:main',
         ],
     },
 )

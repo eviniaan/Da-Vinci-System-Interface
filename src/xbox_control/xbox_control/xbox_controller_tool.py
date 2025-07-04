@@ -11,8 +11,8 @@ class XboxJointController(Node):
             Float64MultiArray, "/forward_position_controller/commands", 10
         )  # or maybe /joint_trajectory_controller/joint_trajectory NOT SURE OF THE TOPIC NAME
 
-        self.joystick_axes = [0.0] * 8  # default size
-        self.joint_positions = [0.0, 0.0, 0.0, 0.0]  # [roll, pitch, jaw_1, jaw_2]
+        self.joystick_axes = [0.0] * 8
+        self.joint_positions = [0.0, 0.0, 0.0, 0.0]  # roll, pitch, jaw_1, jaw_2
 
         self.timer_period = 0.05  # sec
         self.step_size = 0.5  # deg
