@@ -56,8 +56,6 @@ int Controller::sendAngles(float theta_R, float theta_W, float theta_G1, float t
 
     std::cout << "Command sent" << std::endl;
 
-    // controller_.flushOutput();   -> NO flushOutput function in new lib
-
     return 1;
 }
 

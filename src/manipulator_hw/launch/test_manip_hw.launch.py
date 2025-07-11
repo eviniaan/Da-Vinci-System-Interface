@@ -13,7 +13,6 @@ def generate_launch_description():
         ]
     )
 
-    # should probably create the urdf description and add the path to it
     robot_description_path = PathJoinSubstitution(
         [
             FindPackageShare("manipulator_hw"),

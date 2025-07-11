@@ -119,7 +119,7 @@ namespace manipulator_hw
     {
         (void)previous_state;
 
-        // Nothing to deactivate here i guess
+        // Nothing to deactivate
         return hardware_interface::CallbackReturn::SUCCESS;
     }
 
@@ -129,6 +129,12 @@ namespace manipulator_hw
 
         (void)time;
         (void)duration;
+
+        // The following can be used to measure the jitter - Part 1
+        // static rclcpp::Time last_time = time;
+        // rclcpp::Duration interval = time - last_time;
+        // last_time = time;
+        // auto start = std::chrono::steady_clock::now();
 
         std::vector<float> positions;
         int retries = 0;
@@ -151,6 +157,11 @@ namespace manipulator_hw
             hw_positions_[i] = static_cast<double>(positions[i]);
         }
 
+        // The following can be used to measure the jitter - Part 2
+        // auto end = std::chrono::steady_clock::now();
+        // auto duration_us = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
+        // RCLCPP_INFO(rclcpp::get_logger("Jitter"), "read() execution time: %ld microseconds", duration_us);
+
         return hardware_interface::return_type::OK;
     }
 
@@ -161,11 +172,22 @@ namespace manipulator_hw
         (void)time;
         (void)duration;
 
+        // The following can be used to measure the jitter - Part 1
+        // static rclcpp::Time last_time = time;
+        // rclcpp::Duration interval = time - last_time;
+        // last_time = time;
+        // auto start = std::chrono::steady_clock::now();
+
         openrb_controller_->sendAngles(
             static_cast<float>(hw_commands_[0]),
             static_cast<float>(hw_commands_[1]),
             static_cast<float>(hw_commands_[2]),
             static_cast<float>(hw_commands_[3]));
+
+        // The following can be used to measure the jitter - Part 2
+        // auto end = std::chrono::steady_clock::now();
+        // auto duration_us = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
+        // RCLCPP_INFO(rclcpp::get_logger("Jitter"), "write() execution time: %ld microseconds", duration_us);
 
         return hardware_interface::return_type::OK;
     }
